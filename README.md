@@ -1,4 +1,4 @@
-# PyN2: N2 Chart Generator
+# PyN2
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/leomariga/pyn2/main/doc/logo.jpg"><br>
