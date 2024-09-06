@@ -20,7 +20,24 @@ jobs:
       id-token: write
     steps:
       # retrieve your distributions here
+      - name: Build dist
+      - uses: actions/checkout@v4
 
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Poetry
+        uses: snok/install-poetry@v1
+        with:
+          virtualenvs-create: false
+
+      - name: Update version (kept at 0.0.0) in pyproject.toml and build
+        run: |
+          poetry version ${{ github.ref_name }}
+          poetry build
+          
       - name: Publish package distributions to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
