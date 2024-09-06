@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "pyn2"
+version = "0.1.0"
+description = "A python tool for N-squared chart plotting"
+authors = ["Leonardo Mariga <leomariga@gmail.com>"]
+license = "Apache Licence 2.0"
+readme = "README.md"
+
+homepage = "https://github.com/leomariga/pyn2"
+repository = "https://github.com/leomariga/pyn2"
+keywords = ["N2 chart", "Visualization", "Data Visualization", "Charts", "Graphs", "Python Chart Library", "Plotting", "Data Analysis", "Charting Library", "Scientific Computing", "System Engineering"]
+classifiers = [
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: System Administrators",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering :: Visualization"
+]
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+openmdao = "^3.34.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
