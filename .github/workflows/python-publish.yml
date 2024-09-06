@@ -35,7 +35,7 @@ jobs:
 
       - name: Update version (kept at 0.0.0) in pyproject.toml and build
         run: |
-          poetry version ${{ github.ref_name }}
+          # poetry version ${{ github.ref_name }}
           poetry build
           
       - name: Publish package distributions to PyPI
